@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&display=swap");
+
+:root {
+  --bg-main: #053b50;
+  --color-main: #eeeeee;
+  --bg-head-foot: #64ccc5;
+  --color-foot: #141e46;
+}
+
+.dark-mode {
+  --bg-main: #0b2447;
+  --color-main: #e7f6f2;
+  --bg-head-foot: #1d267d;
+  --color-foot: #a5c9ca;
+}
+
+body {
+  background-color: var(--bg-main);
+  margin: 0;
+  color: var(--color-main);
+  font-family: "Montserrat";
+}
+
+header {
+  background-color: var(--bg-head-foot);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img.logo {
+  height: 150px;
+}
+
+nav {
+  margin-right: 50px;
+}
+
+button {
+  padding: 10px;
+  background-color: #176b87;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #053b50;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #053b50;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  border: 1px solid #176b87;
+  box-shadow: 2px 2px 5px #053b50;
+  padding: 5px;
+  color: #eeeeee;
+  background-color: #176b87;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  background-color: #053b50;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-head-foot);
+  padding: 0 30px;
+  color: var(--color-foot);
+}
+
+.left {
+  width: 320px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  background-color: #176b87;
+  width: 60%;
+  padding: 50px 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  height: 25px;
+  width: 300px;
+  border-radius: 10px;
+  font-family: "Montserrat";
+}
+
+input[type="file"] {
+  font-family: "Montserrat";
+  height: 30px;
+  width: 300px;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.row label {
+  margin-right: 50px;
+}
+
+.row .right-input label {
+  margin-right: 0px;
+}
+
+.right-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.right-input {
+  margin-right: 25px;
+}
+
+#asin {
+  margin-left: 70px;
+}
+
+.akhir {
+  justify-content: right;
+}
+
+.row button {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #053b50;
+  margin-left: 10px;
+}
+
+.row button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header {
+    font-size: 9px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    margin-left: 70px;
+  }
+
+  header a {
+    font-size: 9px;
+  }
+
+  .row {
+    width: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .left {
+    text-align: justify;
+    width: 200px;
+  }
+
+  .right {
+    width: 100px;
+  }
+}
